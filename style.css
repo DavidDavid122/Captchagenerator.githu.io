@@ -1,0 +1,111 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(103, 103, 110);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 25px 25px;
+}
+
+header {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.input_field {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+}
+
+.refresh {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    right: 10px;
+    color: #fff;
+    background: blue;
+    border-radius: 4px;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+}
+
+.refresh:active {
+    transform: translateY(-50%) scale(0.97);
+}
+
+.input_field input,
+.button button {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.input_field input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 15px;
+}
+
+.captch_box input {
+    color: #6b6b6b;
+    font-size: 22px;
+    pointer-events: none;
+}
+
+.captch_input input:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.message {
+    display: none;
+    color: blue;
+    font-size: 14px;
+    margin: 14px 0;
+}
+
+.message.active {
+    display: block;
+}
+
+.button button {
+    color: #fff;
+    background: blue;
+    user-select: none;
+    cursor: pointer;
+}
+
+.button button:active {
+    transform: scale(0.99);
+}
+
+.button.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
